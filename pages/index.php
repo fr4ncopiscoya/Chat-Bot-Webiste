@@ -260,7 +260,7 @@
 
                 // iniciar el código ajax
                 $.ajax({
-                    url: 'message.php',
+                    url: '../includes/message.php',
                     type: 'POST',
                     data: 'text=' + $value,
                     success: function(result) {
