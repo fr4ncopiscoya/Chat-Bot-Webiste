@@ -172,7 +172,9 @@ body{
 }
 
 .svg-bot, .svg-cancel, .svg-chat, .svg-send, .svg-menu{
-    margin-top: 8px;
     width: 22px;
     height: 22px;
+}
+.svg-send{
+    margin-bottom: 5px;
 }

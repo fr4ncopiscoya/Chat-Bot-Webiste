@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu" id="inicio">
     <a href="#" class="logo">El tornillo feliz</a>
     <input type="checkbox" id="menu" />
     <label for="menu">
@@ -7,16 +7,19 @@
     <nav class="navbar">
         <ul>
             <li>
-                <a href="#"><i>Inicio</i></a>
+                <a href="../includes/index.php"><i>Inicio</i></a>
             </li>
             <li>
-                <a href="#"><i>Servicios</i></a>
+                <a href="#lista-1"><i>Productos</i></a>
             </li>
             <li>
-                <a href="#"><i>Herramientas</i></a>
+                <a href="#noticias"><i>Noticias</i></a>
             </li>
             <li>
-                <a href="#"><i>Contactos</i></a>
+                <a href="#contacto"><i>Contacto</i></a>
+            </li>
+            <li>
+                <button class="btn_login">Iniciar Sesión</button>
             </li>
         </ul>
     </nav>

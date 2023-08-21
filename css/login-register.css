@@ -1,0 +1,193 @@
+
+.formularios{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
+}
+
+.formularios.active-popup{
+  transform: scale(1)
+}
+
+.formularios.active{
+  height: 520px;
+}
+
+.formularios .form_box{
+  width: 100%;
+  padding: 40px;
+}
+
+.formularios .form_box.login{
+ transition: transform .18s ease;
+ transform: translateX(0);
+}
+
+.formularios.active .form_box.login{
+  transition: none;
+  transform: translateX(-500px);
+}
+
+.formularios .form_box.registracion{
+  position: absolute;
+  transition: none;
+  transform: translateX(500px);
+}
+
+.formularios.active .form_box.registracion{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.form_iniciar{
+  font-size: .9em;
+  color: #000000;
+  font-weight: 500;
+  margin: 25px 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_iniciar p a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form_iniciar p a:hover{
+  text-decoration: underline;
+}
+
+.formularios .icon_close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #87ceeb;
+  font-size: 2em;
+  color: #f7fafa;
+  justify-content: center;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.form_box h2{
+  font-size: 2em;
+  color: #111111;
+  text-align: center;
+}
+
+.input_box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #111111;
+  margin: 30px 0;
+}
+
+.input_box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: none;
+  transition:  .5s;
+}
+
+.input_box input:focus~label,
+.input_box input:valid~label{
+  top: -5px;
+}
+
+.input_box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #111111;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+
+}
+
+.btn, .btnr_btnlg{
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+  transition:  .4s;
+}
+
+.btn, .btnr_btnlg:hover{
+  background: #ff3c2a;
+  color: #ffffff;
+}
+
+.form_resgistrar{
+  font-size: .9em;
+  color: #000000;
+  font-weight: 500;
+  margin: 20px 0 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_resgistrar p a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form_resgistrar p a:hover{
+  text-decoration: underline;
+}
+
+.resgistrar_link:hover{
+  text-decoration: underline;
+}
+
+
+.navbar .btn_login{
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ff3c2a;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #ff3c2a;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-top: 9px;
+  transition:  .4s;
+}
+
+.navbar .btn_login:hover{
+  background: #ff3c2a;
+  color: #ffffff;
+}
