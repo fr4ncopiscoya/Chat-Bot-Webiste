@@ -1,4 +1,15 @@
-<?php include './conn.php' ?>
+<?php
+session_start();
+error_reporting(0);
+$varsesion = $_SESSION['usuario'];
+
+if ($varsesion == null || $varsesion = '') {
+    header('location: ../pages/login-page.php');
+    die();
+}
+?>
+
+<?php include '../includes/conn.php' ?>
 <?php include '../templates/head.php' ?>
 
 <header class="header">
@@ -20,17 +31,14 @@
     </div>
 
     <!-- REGISTRO Y LOGIN -->
-    <div class="formularios">
+    <!-- <div class="formularios">
         <span class="icon_close">
             <icon-icon name="close-outline"></icon-icon>
         </span>
-        <!--LOGIN-->
-        <?php include '../pages/login-page.php' ?>
+        
 
-        <!--REGISTRAR-->
-        <?php include '../pages/register-page.php' ?>
 
-    </div>
+    </div> -->
 </header>
 
 
@@ -166,5 +174,5 @@
 </section>
 
 <?php include '../pages/chatbot.php' ?>
-
+<?php include '../templates/scripts.php' ?>
 <?php include '../templates/footer.php' ?>

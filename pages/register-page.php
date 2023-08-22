@@ -1,4 +1,13 @@
-<div class="form_box registracion"> <br><br>
+<?php include '../includes/conn.php' ?>
+<?php include '../templates/head.php' ?>
+
+
+<div class="form_box registracion" style="
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+"> <br><br>
     <a href="#registrar"></a>
     <form action="../includes/registrar.php" method="POST">
         <h2>Registrate</h2>
@@ -23,11 +32,12 @@
             <label>Password</label>
         </div>
         <a href=""></a>
-        <button type="submit" class="btn" name="save">REGISTRARME</button>
+        <input type="submit" class="btnr_btnlg" value="Enviar">
         <div class="form_iniciar">
             <p>¿Tienes una cuenta?
-                <a href="#" class="inicia_link">Inicia Sesión</a>
+                <a href="../pages/login-page.php" class="inicia_link">Inicia Sesión</a>
             </p>
         </div>
     </form>
 </div>
+<?php include '../templates/scripts.php' ?>

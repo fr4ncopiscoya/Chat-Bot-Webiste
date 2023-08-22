@@ -1,3 +1,14 @@
+<?php
+session_start();
+error_reporting(0);
+$varsesion = $_SESSION['usuario'];
+
+if ($varsesion == null || $varsesion = '') {
+    header('location: ../pages/login-page.php');
+    die();
+}
+?>
+
 <div class="menu" id="inicio">
     <a href="#" class="logo">El tornillo feliz</a>
     <input type="checkbox" id="menu" />
@@ -7,7 +18,7 @@
     <nav class="navbar">
         <ul>
             <li>
-                <a href="../includes/index.php"><i>Inicio</i></a>
+                <a href="../pages/index.php"><i>Inicio</i></a>
             </li>
             <li>
                 <a href="#lista-1"><i>Productos</i></a>
@@ -19,7 +30,10 @@
                 <a href="#contacto"><i>Contacto</i></a>
             </li>
             <li>
-                <button class="btn_login">Iniciar Sesión</button>
+                <h6 style="margin-top: 1rem;padding-left: 10px;"> <?php echo $_SESSION['usuario'] ?></h6>
+            </li>
+            <li>
+                <a href="../includes/close.php"><button class="btn_login">Cerrar Sesión</button></a>
             </li>
         </ul>
     </nav>

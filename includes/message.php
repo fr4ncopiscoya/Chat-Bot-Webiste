@@ -1,5 +1,4 @@
 <?php
-// conectando a la base de datos
 include "../includes/conn.php";
 
 // obteniendo el mensaje del usuario a través de ajax

@@ -1,6 +1,5 @@
-
-const chatbotToggler = document.querySelector(".chatbot-toggler");
-chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+const chatbotToggle = document.querySelector(".chatbot-toggler");
+chatbotToggle.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
 $(document).ready(function () {
     $("#send-btn").on("click", function () {
