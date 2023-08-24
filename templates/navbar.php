@@ -18,10 +18,10 @@ if ($varsesion == null || $varsesion = '') {
     <nav class="navbar">
         <ul>
             <li>
-                <a href="../pages/index.php"><i>Inicio</i></a>
+                <a href="../pages/index.php#hero"><i>Inicio</i></a>
             </li>
             <li>
-                <a href="#lista-1"><i>Productos</i></a>
+                <a href="../pages/index.php#lista-1"><i>Productos</i></a>
             </li>
             <li>
                 <a href="#noticias"><i>Noticias</i></a>

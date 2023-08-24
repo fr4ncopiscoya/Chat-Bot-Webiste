@@ -17,7 +17,7 @@ if ($varsesion == null || $varsesion = '') {
     <?php include '../templates/navbar.php' ?>
 
 
-    <div class="header-content container">
+    <div id="hero" class="header-content container">
         <div class="header-txt">
             <h1>Ofertas especiales</h1>
             <p>
@@ -44,8 +44,8 @@ if ($varsesion == null || $varsesion = '') {
 
 <section class="oferts container" id="lista-1">
     <div class="descri">
-        <h2>Nuestros productos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2>Productos En Oferta</h2>
+        <p>¡Ahorra y lleva los mejores beneficios a tu hogar!</p>
     </div>
 
 
@@ -53,36 +53,38 @@ if ($varsesion == null || $varsesion = '') {
         <div class="ofert-1">
             <img src="../img/tala.png" alt="" />
             <div class="product-txt">
-                <h3>Herramientas Electricas</h3>
-                <p>calidad premium</p>
+                <h3>Taladro Electrico</h3>
+                <p>Precio: $. 500</p>
+
                 <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
             </div>
         </div>
 
         <div class="ofert-1">
-            <img src="../img/sierra.png" alt="" />
+            <img src="../img/decoracion.png" alt="" />
             <div class="product-txt">
-                <h3>Decohogar</h3>
+                <h3>Sofa Amarillo</h3>
                 <p>calidad premium</p>
+                <p>Precio: $.700</p>
                 <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
             </div>
         </div>
         <div class="logan-1">
-            <h3>Herramientas</h3>
+            <h3>Muebles</h3>
             <p>calidad premium</p>
         </div>
     </div>
 
     <div class="oferts-content">
         <div class="logan-1">
-            <h3>Baños y cocinas</h3>
+            <h3>Baños y espejos</h3>
             <p>calidad premium</p>
         </div>
         <div class="ofert-1">
-            <img src="../img/lija.png" alt="" />
+            <img src="../img/habitacion.png" alt="" />
             <div class="product-txt">
-                <h3>Construccion y Ferretería</h3>
-                <p>calidad premium</p>
+                <h3>Espejo Para Habitación</h3>
+                <p>Precio: $70</p>
                 <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar</a>
             </div>
         </div>
@@ -90,8 +92,8 @@ if ($varsesion == null || $varsesion = '') {
         <div class="ofert-1">
             <img src="../img/amola.png" alt="" />
             <div class="product-txt">
-                <h3>Tecnología</h3>
-                <p>calidad premium</p>
+                <h3>Amoladora</h3>
+                <p>Precio: $.300</p>
                 <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar</a>
             </div>
         </div>
@@ -103,10 +105,7 @@ if ($varsesion == null || $varsesion = '') {
         <div class="promotion-txt">
             <h2>Las mejores Promociones</h2>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi esse
-                quidem quam vitae eveniet? Voluptate est voluptatem, molestias
-                voluptatibus culpa cumque minima optio, quia, quas dolor incidunt
-                tempore temporibus aspernatur.
+                ¡Descubre nuestras increíbles promociones en la ferretería que te brindarán la oportunidad perfecta para equiparte con las herramientas y productos que necesitas!
             </p>
             <a href="#" class="btn-1">Informacion</a>
         </div>
@@ -123,49 +122,38 @@ if ($varsesion == null || $varsesion = '') {
     <div class="descri">
         <h2>Nuevas Noticias</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero animi
-            exercitationem! Libero repellat, saepe dolore ea ratione voluptatem!
-            Veritatis velit at incidunt aliquam nobis quaerat ducimus iure beatae
-            dolorem.
+            ¿Estás listo para ahorrar mientras te equipas con las mejores herramientas y productos? ¡No busques más! En nuestra ferretería, hemos lanzado una serie de promociones emocionantes que te ayudarán a lograr tus proyectos con facilidad y economía.
         </p>
     </div>
 
 
     <div class="blog-content">
         <div class="blog-1">
-            <img src="../img/images1.jpg" alt="" />
+            <img src="../img/perchero.jpg" alt="" />
             <div class="blog-txt">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-                    nihil corrupti voluptatum consectetur ex id. Consequatur
-                    repudiandae sit nostrum ullam veritatis tenetur possimus ex, fugit
-                    molestiae error cumque molestias est.
+                    Los estantes modulares son versátiles y pueden adaptarse a diferentes espacios y necesidades. Puedes ofrecer estantes de diferentes tamaños y configuraciones para que los usuarios puedan personalizar su organizador según sus preferencias.
                 </p>
                 <a href="#" class="btn-4">Leer mas</a>
             </div>
         </div>
 
         <div class="blog-1">
-            <img src="../img/images2.jpg" alt="" />
+            <img src="../img/sillas.jpg" alt="" />
             <div class="blog-txt">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex iusto
-                    dolorum excepturi non eveniet esse similique sint eius. Dolorem
-                    quidem odit illo aliquid. Ipsum quos, inventore nobis voluptatibus
-                    sed aspernatur..
+                    Estas sillas son versátiles y se adaptan a una variedad de estilos de decoración. Puedes optar por sillas de madera sólida con respaldos elegantes y asientos acolchados para un aspecto atemporal.
                 </p>
                 <a href="#" class="btn-4">Leer mas</a>
             </div>
         </div>
 
         <div class="blog-1">
-            <img src="../img/images3.jpg" alt="" />
+            <img src="../img/mueble.jpg" alt="" />
             <div class="blog-txt">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-                    ipsam fugiat sed tenetur reprehenderit et soluta fuga voluptate
-                    distinctio velit animi, minus earum sit, iste eius? Veniam
-                    possimus et nisi!.
+                    Colores de muebles para sala clásicos, Muebles en color madera para salones clásicos, Muebles en color blanco para salas clásicas, Muebles en color negro para salas clásicas, Muebles color chocolate para salas clásicas, Colores de muebles para salas modernas, Muebles para salas modernas color dorado, Muebles para salas color rosa gold, Muebles color caoba para salas modernas, Muebles blancos para salas modernas, Muebles en color plateado para salas modernas.
+
                 </p>
                 <a href="#" class="btn-4">Leer mas</a>
             </div>
